@@ -12,7 +12,7 @@ function App() {
       <ErrorBoundary>
         {/* Navbar */}
         <Navbar />
-        <div className="flex">
+        <div className="flex w-full">
           {/* Sidebar */}
           <Sidebar></Sidebar>
           {/* Routes */}

@@ -5,14 +5,15 @@ import {GoMail} from "react-icons/go";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 w-full border-b border-b-slate-400">
+    <div className="sticky top-0 w-full border-b border-b-slate-400 bg-white z-30">
       <div className="w-full flex items-center justify-between">
-        <div className="border border-slate-400 w-[18%] flex items-center justify-center py-4">
+        <div className="border border-slate-400 w-[18%] flex items-center justify-center py-2 bg-white">
           {/* Image */}
-          Spehre Logo
+          {/* Spehre Logo */}
+          <img src="./logo.png" className='h-11' alt="" />
         </div>
 
-        <div className="w-auto flex h-auto flex-nowrap justify-end items-center gap-3">
+        <div className="w-auto flex h-auto flex-nowrap justify-end items-center gap-3 pr-3">
           {/* search bar */}
             <div className="mr-[40px] w-[300px] flex justify-center items-center">
               <input className='w-full rounded-md' type="text" id="search-bar" placeholder="Search" />
@@ -25,9 +26,9 @@ const Navbar = () => {
             <div className='p-2 border border-slate-400 rounded-md'>
               <GoMail className='text-[#6964ff] text-[20px]'/>
             </div>
-            <div className='p-2 border border-slate-400 rounded-full'>
+            <div className='p-2 border border-slate-400 bg-slate-200 w-10 h-10 rounded-full'>
               {/* replace span with user profile */}
-              <span className=''>....</span>
+              <span className=''></span>
             </div>
         </div>
       </div>
